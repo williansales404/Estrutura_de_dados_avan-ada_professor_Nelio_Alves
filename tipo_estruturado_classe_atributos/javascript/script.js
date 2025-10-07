@@ -1,15 +1,14 @@
-class Product{
-    
-    constructor(name, price, quantity){
+function Product(name, price, quantity){
         //atributos this são os atributos da instância.
         this.name = name;
         this.price = price;
         this.quantity = quantity;
-    }
-    toString(){
+
+        this.toString = function(){
         return `${this.name}, $${this.price.toFixed(2)}, ${this.quantity}`;
     }
 }
+    
 /*variavel estruturada com mais de um atributo
 este objeto tem seu valor guardado em memoria
 esta variavel esta apontando para um objeto que tem este tres atributos na memoria*/
@@ -20,4 +19,4 @@ esta variavel esta apontando para um objeto que tem este tres atributos na memor
  console.log(product2.toString());
  console.log("-------------------");
  console.log(product1.name);
- console.log(product2.name);   
+ console.log(product2.name);
